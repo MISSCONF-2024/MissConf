@@ -62,7 +62,6 @@ Then we can instrument more easily by simply entering `clang-wrapper test.c` or 
 
 ### CTBugReproduction
 
-### How to use MissConf
 Enter the directory of MissConf and simply use it with `MissConf.py`
 ```
 cd /path/to/MissConf/CTBugReproduction/

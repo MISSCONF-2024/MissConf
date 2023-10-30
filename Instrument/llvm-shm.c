@@ -39,8 +39,8 @@ __thread u32 __afl_prev_loc;
 
 /* SHM setup. */
 /* 
-  这一部分代码需要被合并到工具中，因为pass.so.cc中用到了__afl_area_ptr这个extern变量。
-  在构造IR语句的时候，就是调用了GlobalValue::ExternalLinkage 
+  This part of the code needs to be merged into the tool because the extern variable __afl_area_ptr is used in pass.so.cc.
+  When constructing the IR statement, GlobalValue::ExternalLinkage is called
 */
 void get_file(u8* buf) {
   // char* wrapper_path = getenv("WRAPPER_PATH");
